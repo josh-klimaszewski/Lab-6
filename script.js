@@ -10,6 +10,7 @@ $(function () {
     var $tableSize;
     var info1;
     var info2;
+    var info3;
     var infoBox;
 
     $form.hide();
@@ -31,15 +32,7 @@ $(function () {
         if ($tableName) {
             if ($tablePhone) {
                 if ($tableSize) {
-                    info1 = $('<p>');
-                    info2 = $('<p>');
-                    infoBox = $('<div>');
-                    infoBox.addClass('info');
-                    info1.text("Name: " + $tableName);
-                    info2.text("Table Size: " + $tableSize);
-                    infoBox.append(info1);
-                    infoBox.append(info2);
-                    $this.append(infoBox);
+                    addHoverData();
                     $this.removeClass('available');
                     $this.addClass('reserved');
                     $form.slideUp(400);
@@ -55,5 +48,19 @@ $(function () {
         } else {
             alert("Please enter a name!");
         }
-    })
+    });
+    function addHoverData() {
+        info1 = $('<p>');
+        info2 = $('<p>');
+        info3 = $('<p>');
+        infoBox = $('<div>');
+        infoBox.addClass('info');
+        info1.text("Name: " + $tableName);
+        info2.text("Phone Number: " + $tablePhone);
+        info3.text("Table Size: " + $tableSize);
+        infoBox.append(info1);
+        infoBox.append(info2);
+        infoBox.append(info3);
+        $this.append(infoBox);
+    }
 });
