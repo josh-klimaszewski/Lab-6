@@ -80,7 +80,6 @@ h1 {
 
 .table {
     position: relative;
-    border: 1px solid black;
     padding: 10%;
     margin: 5%;
     border-radius: 50%;
@@ -109,12 +108,12 @@ h1 {
 }
 
 .info p {
-    padding: 1px;
+    padding: 5px;
     color: black;
 }
 
 .available:hover {
-    border: 1px solid #E34E45;
+    color: #E34E45;
     cursor: cell;
 }
 
