@@ -52,7 +52,7 @@ input {
     justify-content: space-around;
     background-color: #EEE;
     margin: 5%;
-    padding: 5%;
+    
 }
 
 h1,
@@ -113,11 +113,12 @@ h1 {
 }
 
 .available:hover {
-    color: #E34E45;
+    color: #008000;
     cursor: cell;
 }
 
 .reserved:hover {
+    color: #E34E45;
     cursor: not-allowed;
 }
 
@@ -127,7 +128,7 @@ h1 {
 
 @media only screen and (min-width: 680px) {
     .container {
-        margin: 0 25%;
-        width: 40%;
+        margin: 0 25% 50% 25%;
+        width: 50%;
     }
 }
